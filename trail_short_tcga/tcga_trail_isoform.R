@@ -4,7 +4,7 @@ library(ggplot2)
 library(plotly)
 
 {
-  #Local directory of TCGA files. 
+  #Local directory of TCGA files (obtained from http://gdac.broadinstitute.org/). Sample file: http://gdac.broadinstitute.org/runs/stddata__2016_01_28/data/ACC/20160128/gdac.broadinstitute.org_ACC.Merge_rnaseqv2__illuminahiseq_rnaseqv2__unc_edu__Level_3__RSEM_isoforms__data.Level_3.2016012800.0.0.tar.gz 
   tcga_tpm_files = list.files("/Volumes/ADATA/TCGA_isoform_auto", recursive = T, full.names = T)
   tcga_tpm_files = tcga_tpm_files[grep("rnaseqv2", tcga_tpm_files)]
 }
